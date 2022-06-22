@@ -1,28 +1,35 @@
-
 def myfuncion(name):
     print("Hello, " + name)
 
-def suma(a,b):
-    print(a+b)
+
+def suma(a, b):
+    print(a + b)
+
 
 myfuncion("Sergio")
-suma(1,2)
+suma(1, 2)
 
-#funciones anidadas
 
-def maths(a,b):
+# funciones anidadas
+
+def maths(a, b):
     def suma():
-        print(a+b)
+        print(a + b)
+
     def resta():
-        print(a-b)
+        print(a - b)
+
     def multiplicacion():
-        print(a*b)
+        print(a * b)
+
     def division():
-        print(a/b)
+        print(a / b)
+
     suma()
     resta()
     multiplicacion()
     division()
+
 
 def frase(**kwargs):
     if "coche" not in kwargs:
@@ -32,9 +39,7 @@ def frase(**kwargs):
 
 frase(nombre="asd", coche="Ferrari")
 
+# funciones lambda
 
-#funciones lambda
-
-anonymous = lambda x,y: x+y
-print(anonymous(1,2))
-
+anonymous = lambda x, y: x + y
+print(anonymous(1, 2))
